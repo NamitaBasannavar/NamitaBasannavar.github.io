@@ -1,83 +1,81 @@
-/* Add styles for  truYum application here */
 body {
-	height : 100%;
-	width : 98%;
+                height: 100%;
+                width: 100%;
+     }
+header { 
+    background-color: #4a5b91;
+                color: white;
+    height: 80px;
+                font-size: 20pt;
 }
-header {
-	background-color : #4a5b91;
-	color : white;
-    height : 100px;
+
+footer {
+    background-color: #adb3af;
+    height: 80px;
+                font-size: 20pt;
+                margin-right: 10px;
 }
 div {
-	height:500px;
-}
-footer {
-	background-color : #adb3af;
-	height : 100px;
-}
-img {
-	height : 50px;
-	width : 50px;
+                height: 500px;
 }
 
+img {
+    height:  50px;
+                width: 50px;
+}
 
 #menu {
-	float : right;
-	margin-right : 10px;
-	margin-top : 20px;
-	color : white;
-	
-}
+    float: right;
+                margin-right: 50px;
+                margin-top: 20px;
+                color: #faf9f7;
+}              
 #cart {
-    float : right;
-	margin-top : 20px;	
-    margin-right : 10px;
-	color : white;
+    float: right;
+                margin-right: 50px;
+                margin-top: 20px;
+                color: #faf9f7;
+}              
+p {
+                text-align:center;
+                color: #4ca334;
+}
+h3 {
+                color: #4ca334;
+}
+h4 {
+                color: #46ab5f;
+}
+h2 {
+                text-align: center; 
+                color: #47b564;
 }
 
 .cont {
-	margin-left : 10px;
+                margin-left: 200px;
+                font-size: 15pt;
+                width: 1000px;
+                padding: 30px;
+}
+.head {
+                margin-left: 30px;
 }
 
-.btn {
-     text-align : right;
+.txt-left {
+                text-align: left;
+                width: 100px;
 }
-p{
-	color : green;
+.txt-right {
+                text-align: right;
+                width: 100px;
 }
-.main {
-	margin-left : 100;
+.txt-center {
+                text-align: center;
+                width: 100px;
 }
-.move {
-	margin-left : 200px;
-}
-.name {
-	width : 100;
-	text-align : left;
-}
-.fd {
-	width : 100;
-	text-align : right;
-}
-.pr {
-	width : 100;
-	text-align : right;
-}
-.ca {
-	width : 150;
-	text-align : right;
-}
-.ac {
-	width : 100;
-	text-align : right;
-}
-.cart {
-	margin-left : 100;
-}
-.free {
-	width : 100;
-	text-align : left;
-}
-.option {
-	color : #adb3af;
+.color {
+                background-color: #313f87;
+                color: #faf9f7;
+                height: 30px;
+                width: 70px;
 }

@@ -1,71 +1,55 @@
-<!docttype html>
+<!DOCTYPE html>
 <html>
-<head>
-    <title> edit menu item</title>
-    <link rel="stylesheet"  type="text/css" href="./style/style.css"/>
-	<script src="./js/script.js" type="text/javascript"></script>
-</head>
-
-<body> 
-		<header>
-			<span class="cont"> truYum</span>
-			<img src="./images/truyum-logo-light.png" />
-			<a id="menu" href="menu-item-list-admin.html">Menu</a>
-	   </header>
-		
+    <head>
+        <title>Edit Menu Item </title>
+           <link rel="stylesheet" type"text/css" href="./style/style.css"/>
+           <script src="./js/script.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <header>
+                <span>truYum</span>
+                 <img class="img" src="./images/truyum-logo-light.png"/> 
+                 <a id="menu" href="./menu-item-list-admin.html"/>Menu</a>
+        </header>
 		<div>
-			<h1 class="cont"> Edit Menu Item</h1>
-				<form  name="mymenu" method="post" action="edit-menu-item-status.html" onSubmit="return validation()">
-					<table>
-						<tr>
-							<td colspan="4">Name</td>
-						</tr>
-						<tr>
-							<td colspan="4"><input type="text" id="txtname" name="txtname" size="80" value="Sandwich"/></td> 
-						
-						</tr>
-					
-						<tr>
-							<td>Price(Rs.)</td>
-							<td>Active</td>
-							<td>Date of Launch</td>
-							<td>Category</td>
-						</tr>
-					    <tr>
-							
-							<td><input   class="btn" type="text"  id="price" name="txtPrice" value="97" /></td>
-							<td><input type="radio" id="rd1" name="rdyes" value="Yes" checked />Yes
-							    <input type="radio" id="rd2" name="rdyes" />No</td>
-							<td><input type="text" id="launch" name=" Date of Launch"  value="27/04/2022"/></td>
-						
-							<td>
-								<select name="selCategory">
-									<option value="mc">Main Course</option>
-									<option value="start">Starters</option>
-									<option value="dessert">Dessert</option>
-									<option value="drnk">Drinks</option>
-								</select>
-							</td>
-						</tr>
-						<tr>
-							<td><input type="checkbox" id="chk1" name="chk1"/>Free delivey</td>
-						</tr>
-				
-						<tr>
-				   
-							<td><input class="btn" type="Submit"  name="Submit" onClick="validate"/></td>
-						</tr>
-				
-					</table>
-				</form>
-		</div>
-		<footer><span>copyright@2019</span></footer>
-</body>
+            <h1>Edit Menu Item</h1>
+			<form class="cont" name="form" onSubmit="return validation()" method="post" action="edit-menu-item-status.html">
+            <table>
+                <tr>
+                       <td colspan="4">
+                        <label for="txtName"> Name</label></td>
+                </tr>
+                <tr>
+                        <td colspan="4"><input type="text" id="txtName" name="txtName" size="80" value="Sandwich"></td>
+                </tr>
+                <tr>
+                       <td><label for="txtPrice">Price(Rs.)</label></td>
+                       <td>Active</td>
+                       <td><label for="txtDoB">Date of Launch</label></td>
+                       <td><label for="Category">Category</label></td>
+                </tr>
+                <tr>
+                       <td><input type="textbox"  id="txtPrice" name="txtPrice" class="txt-right" value="97"></td>
+                       <td><label for="rdYes"><input type="radio" id ="rdYes" name="rdYes" checked>Yes</label>
+                           <label for="rdNo"><input type="radio" id="rdNo" name="rdYes" >No</label></td>
+                       <td><input type="text" id="txtDoL" name="txtDoL" value="27/04/2022"></td>
+                       <td><select name="Category" id="Category">
+                           <option>Starters</option>
+                           <option>Main Course</option>
+                           <option>Dessert</option>
+                           <option>Drinks</option></td>
+                </tr>
+                <tr>
+                       <td colspan="2"><input type="checkbox" id="cbDelivery" name="cbDelivery" checked>Free Delivery</td>
+                </tr>
+                <tr>
+                       <td  colspan="2"><input class="color" type="submit" value="Save"></td>
+                </tr>
+            </table>
+        </form>
+   </div>   
+   <footer>
+                <span>Copyright@2019<span>
+   </footer>
+    </body>
 </html>
-
-		  
-		
-		
-		
-		
-	
