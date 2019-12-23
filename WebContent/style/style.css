@@ -1,69 +1,69 @@
 body {
-                height: 100%;
-                width: 100%;
+         height: 100%;
+         width: 100%;
      }
 header { 
-    background-color: #4a5b91;
-                color: white;
-    height: 80px;
-                font-size: 20pt;
+			background-color: #4a5b91;
+            color: white;
+			height: 80px;
+            font-size: 20pt;
 }
 
 footer {
-    background-color: #adb3af;
-    height: 80px;
-                font-size: 20pt;
-                margin-right: 10px;
+			background-color: #adb3af;
+			height: 80px;
+            font-size: 20pt;
+            margin-right: 10px;
 }
 div {
-                height: 500px;
+            height: 500px;
 }
 
 img {
-    height:  50px;
-                width: 50px;
+			height:  50px;
+            width: 50px;
 }
 
 #menu {
-    float: right;
-                margin-right: 50px;
-                margin-top: 20px;
-                color: #faf9f7;
+            float: right;
+             margin-right: 50px;
+             margin-top: 20px;
+             color: #faf9f7;
 }              
 #cart {
-    float: right;
-                margin-right: 50px;
-                margin-top: 20px;
-                color: #faf9f7;
+			float: right;
+            margin-right: 50px;
+            margin-top: 20px;
+            color: #faf9f7;
 }              
 p {
-                text-align:center;
-                color: #4ca334;
+            text-align:center;
+            color: #4ca334;
 }
 h3 {
-                color: #4ca334;
+            color: #4ca334;
 }
 h4 {
-                color: #46ab5f;
+            color: #46ab5f;
 }
 h2 {
-                text-align: center; 
-                color: #47b564;
+            text-align: center; 
+             color: #47b564;
 }
 
 .cont {
-                margin-left: 200px;
-                font-size: 15pt;
-                width: 1000px;
-                padding: 30px;
+             margin-left: 200px;
+             font-size: 15pt;
+             width: 1000px;
+             padding: 30px;
 }
 .head {
-                margin-left: 30px;
+             margin-left: 30px;
 }
 
 .txt-left {
-                text-align: left;
-                width: 100px;
+              text-align: left;
+              width: 100px;
 }
 .txt-right {
                 text-align: right;
