@@ -9,7 +9,7 @@ import com.cognizant.truyum.model.MenuItem;
 import com.cognizant.truyum.util.DateUtil;
 
 public class MenuItemDaoCollectionImpl implements MenuItemDao {
-	private List<MenuItem> menuItemList;
+	private  static List<MenuItem> menuItemList;
 
 	public MenuItemDaoCollectionImpl() throws ParseException {
 		if (menuItemList == null) {
