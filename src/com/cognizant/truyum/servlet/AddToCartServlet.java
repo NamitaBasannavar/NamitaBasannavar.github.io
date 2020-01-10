@@ -19,9 +19,7 @@ import com.cognizant.truyum.dao.CartDaoCollectionImpl;
 public class AddToCartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
+   
     public AddToCartServlet() {
         super();
     }   
