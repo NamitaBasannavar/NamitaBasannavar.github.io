@@ -62,24 +62,15 @@ insert into cart (ct_us_id,ct_pr_id) values(2,1),(2,2);
 -- -----------------------------------------------------------------
 select * from cart;
 
--- ---------------------------------------------------------
+- ---------------------------------------------------------
 -- View Cart 
 -- -----------------------------------------------------------------
-select me_name,me_free_delivery, me_price
+select me_name,me_free_delivery, m-e_price
 from menu_item
 inner join cart 
 on ct_pr_id=me_id
 where ct_us_id=2; 
 
--- -----------------------------------------------------------
--- Show Total
---------------------------------------------------------------
-select sum(me_price)
- as Total
- from menu_item
-inner join cart 
-on ct_pr_id=me_id
-where ct_us_id=2; 
 
 
 -- ---------------------------------------------------------
