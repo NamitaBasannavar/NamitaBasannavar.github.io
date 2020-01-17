@@ -19,12 +19,12 @@ public class MenuItemDaoSqlImplTest {
 				System.out.println("------Admin menu item list------");
 				testGetMenuItemListAdmin();
 
-				/*System.out.println("--------Customer menu item list-------");
+				System.out.println("--------Customer menu item list-------");
 				testGetMenuItemListCustomer();
-				testModifyMenuItem();
 
 				System.out.println("--------Modify menu item list------");
-				testGetMenuItemListAdmin();*/
+				testModifyMenuItem();
+				testGetMenuItemListAdmin();
 
 			} catch (ParseException e) {
 

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import com.cognizant.truyum.dao.MenuItemDao;
 import com.cognizant.truyum.dao.MenuItemDaoCollectionImpl;
+import com.cognizant.truyum.dao.MenuItemDaoSqlImpl;
 import com.cognizant.truyum.model.MenuItem;
 
 /**
@@ -35,7 +36,7 @@ public class ShowEditMenuItemServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)throws ServletException, IOException {
 		try {
 			int x = Integer.parseInt(request.getParameter("menuItemId"));	
-			MenuItemDao menuItemDao = new MenuItemDaoCollectionImpl();
+			MenuItemDao menuItemDao = new MenuItemDaoSqlImpl();
 			MenuItem menuItem = menuItemDao.getMenuItem(x);
 			request.setAttribute("menuItem", menuItem );
 			RequestDispatcher rd=request.getRequestDispatcher("edit-menu-item.jsp");

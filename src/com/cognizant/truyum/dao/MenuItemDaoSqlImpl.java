@@ -15,7 +15,6 @@ public class MenuItemDaoSqlImpl implements MenuItemDao {
 	public List<MenuItem> getMenuItemListAdmin() throws SQLException {
 
 		Connection con = ConnectionHandler.getConnection();
-		System.out.println(con);
 		List<MenuItem> menuItemList = new ArrayList<>();
 		try {
 			String sql = "select * from menu_item";
@@ -58,11 +57,13 @@ public class MenuItemDaoSqlImpl implements MenuItemDao {
 		List<MenuItem> menuItemList =new ArrayList<>();
 	    Connection con = ConnectionHandler.getConnection();
 		try {
-			String sql= "SELECT me_active,me_date_of_launch FROM menu_item WHERE me_active=? AND me_date_of_launch <=?"; 
+			String sql= "select * from menu_item WHERE me_active=? AND me_date_of_launch <=?"; 
 			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setString(4, "Yes");
+			
+			ps.setString(1, "Yes");
 			java.util.Date d=new java.util.Date();
 			ps.setDate(2,new java.sql.Date(d.getTime()));
+			
 			ResultSet rs = ps .executeQuery();
 			while(rs.next()) {
 				MenuItem menu = new MenuItem();
@@ -103,11 +104,11 @@ public class MenuItemDaoSqlImpl implements MenuItemDao {
 		
 			ps.setString(1, menuItem.getName());
 			ps.setFloat(2, menuItem.getPrice());
-			ps.setBoolean(3, menuItem.isActive());
+			ps.setString(3, menuItem.isActive()?"Yes":"No");
 			java.util.Date d=new java.util.Date();
 			ps.setDate(4,new java.sql.Date(d.getTime()));
 			ps.setString(5, menuItem.getCategory());
-			ps.setBoolean(6, menuItem.isFreeDelivery());
+			ps.setString(6, menuItem.isFreeDelivery()?"Yes":"No");
 			ps.setLong(7, menuItem.getId());
 			int result = ps.executeUpdate();
 		

@@ -22,9 +22,9 @@ public class ConnectionHandler {
                String url = prop.getProperty("connection-url");
                String user = prop.getProperty("user");
                String pass = prop.getProperty("password");
-               System.out.println("before");
+              
                con =  DriverManager.getConnection(url,user,pass);
-               System.out.println("after");
+              
           }catch(Exception ex) {
                System.out.println(ex);
           }

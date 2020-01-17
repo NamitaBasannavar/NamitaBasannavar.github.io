@@ -65,7 +65,7 @@ select * from cart;
 - ---------------------------------------------------------
 -- View Cart 
 -- -----------------------------------------------------------------
-select me_name,me_free_delivery, m-e_price
+select me_name,me_free_delivery, me_price
 from menu_item
 inner join cart 
 on ct_pr_id=me_id
